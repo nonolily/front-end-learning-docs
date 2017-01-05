@@ -1,0 +1,22 @@
+React
+  react定义：
+    React: 
+      方法：React.createClass(): 
+              属性：this.props
+              属性：this.state
+              方法：render()
+              方法：生命周期
+              其他乱七八糟的方法和属性                         
+      方法：ReactDOM.render()：ReactDOM.render(<ThisPage />, 
+                                              document.getElementById(),								  
+                                              )
+      别的乱七八糟的方法和属性
+
+  redux
+    介绍
+      数据流：数据流是我们的行为与相应的抽象
+      为什么要使用数据流：使用数据流帮助我们明确了行为对应的相应
+      React与数据流的关系
+      主流数据流框架：Flux/reFlux/Redux
+
+    单向数据流：
