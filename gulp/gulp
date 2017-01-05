@@ -1,0 +1,22 @@
+glup
+  定义：基于node.js的前端构建工具
+  作用
+    将不同的库和样式文件绑定到一起并进行压缩
+    保存文件时刷新你的网页页面
+    快速进行单元测试 
+    进行代码分析
+    将less/sass编译为css文件
+    将修改后的文件拷贝到输出目录
+  
+  gulp的工作流程
+
+  API简介
+    gulp.task: 定义一个task
+    gulp.src: 读文件
+    gulp.dest: 写文件
+    gulp.watch:监听文件的修改
+
+  通过npm安装gulp
+
+引用：
+http://brandonclapp.com/what-is-gulp-js-and-why-use-it/
