@@ -1,22 +1,40 @@
+笔记
 React
-  react定义：
-    React: 
-      方法：React.createClass(): 
-              属性：this.props
-              属性：this.state
-              方法：render()
-              方法：生命周期
-              其他乱七八糟的方法和属性                         
-      方法：ReactDOM.render()：ReactDOM.render(<ThisPage />, 
-                                              document.getElementById(),								  
-                                              )
-      别的乱七八糟的方法和属性
+react定义：
+React: 方法：
+React.createClass(): 
+属性：this.props
+属性：this.state
+方法：render()
+方法：生命周期
+其他乱七八糟的方法和属性                         
+方法：ReactDOM.render()：ReactDOM.render(<ThisPage />, 
+								  document.getElementById(),								  
+								  )
+别的乱七八糟的方法和属性
 
-  redux
-    介绍
-      数据流：数据流是我们的行为与相应的抽象
-      为什么要使用数据流：使用数据流帮助我们明确了行为对应的相应
-      React与数据流的关系
-      主流数据流框架：Flux/reFlux/Redux
+构建React应用的思考
+将UI拆分为与数据结构对应的层次
+创建一个静态版本
+确定状态state的最小集合（考虑组件中的显示的数据）
+数据是不是通过props从父节点传过来的？如果是，那该数据可能就不应该是一个state
+数据是否会随时间改变？如果是，那该数据可能就不应该是一个state
+你可以通过组件中任何其他state或props计算得到这个state的值吗？如果是，那该数据可能就不应该是一个state
+确定哪些组件拥有这些state（考虑应用中的每一个state）
+确定每一个基于该state渲染的组件
+找到一个共有的组件
+如果没有共有的组件则新创建一个组件，包裹该组件
+Refs and the DOM
+当你需要直接操作一个组件渲染的DOM标记（譬如要调整它的绝对位置），或者在一个大型的非React应用中使用一个React组件，或者是把你已有的代码库在React中复用。
+ref回调属性：ref属性需要一个回调函数，并且回调将组件安装或卸载后立即执行
+不受控的组件
+定义：表单数据是由DOM元素自己处理的 
+WEB组件
+redux
+介绍
+数据流：数据流是我们的行为与相应的抽象
+为什么要使用数据流：使用数据流帮助我们明确了行为对应的相应
+React与数据流的关系
+主流数据流框架：Flux/reFlux/Redux
 
-    单向数据流：
+单向数据流：
